@@ -18,137 +18,137 @@ public class Bilet {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to ekoAirlines \nB C D rotasından birini seciniz: ");
-        String rota = sc.nextLine().toUpperCase();
+        System.out.println("Welcome to ekoAirlines \nB C D choose one of the routes: ");
+        String route = sc.nextLine().toUpperCase();
 
-        System.out.println("ucak yönü için \ntek yon -> 0\ncift yon -> 1\n seciniz");
-        int ucusYonu = sc.nextInt();
+        System.out.println("for airplane direction \none direction -> 0\ndouble direction -> 1\n choose");
+        int flightDirection = sc.nextInt();
 
-        System.out.println("agam yasını gir: ");
-        int yas = sc.nextInt();
+        System.out.println("please enter your age: ");
+        int age = sc.nextInt();
 
-        double fiyatB = 500 * 0.10;//a dan b ye ucus fiyatı
-        double fiyatC = 700 * 0.10;//a dan c ye ucus fiyatı
-        double fiyatD = 900 * 0.10;//a dan d ye ucus fiyatı
+        double priceB = 500 * 0.10;//a dan b ye ucus fiyati
+        double priceC = 700 * 0.10;//a dan c ye ucus fiyati
+        double priceD = 900 * 0.10;//a dan d ye ucus fiyati
 
-        if (rota.equals("B") || rota.equals("C") || rota.equals("D")) {// rota kontrolü yapıldı
-            if (yas > 65) {
-                if (rota.equals("B")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+        if (route.equals("B") || route.equals("C") || route.equals("D")) {// rota kontrolu yapildi
+            if (age > 65) {
+                if (route.equals("B")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("65 yas üstü B sehrine çift yon bilet toplam fiyatınız: " + (fiyatB * 0.7 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("65 yas üstü B sehrine tek yon bilet toplam fiyatınız: " + (fiyatB * 0.7) + "$");
+                        System.out.println("Your total price of double-way ticket to B city over 65 years old: " + (priceB * 0.7 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("Your total price of one-way ticket to B city over 65 years old: " + (priceB * 0.7) + "$");
 
-                    } else System.out.println("agam hala yönün belli değil");
+                    } else System.out.println("please indicate your direction");
 
 
-                } else if (rota.equals("C")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("C")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("65 yas üstü C sehrine çift yon bilet toplam fiyatınız: " + (fiyatC * 0.7 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("65 yas üstü C sehrine tek yon bilet toplam fiyatınız: " + (fiyatC * 0.7) + "$");
+                        System.out.println("Your total price of double-way ticket to C city over 65 years old: " + (priceC * 0.7 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("65 yas üstü C sehrine tek yon bilet toplam fiyatınız: " + (priceC * 0.7) + "$");
 
                     } else System.out.println("agam hala yonün belli değil");
 
-                } else if (rota.equals("D")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("D")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("65 yas üstü D sehrine çift yon bilet toplam fiyatınız: " + (fiyatD * 0.7 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("65 yas üstü D sehrine tek yon bilet toplam fiyatınız: " + (fiyatD * 0.7) + "$");
+                        System.out.println("65 yas üstü D sehrine çift yon bilet toplam fiyatınız: " + (priceD * 0.7 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("65 yas üstü D sehrine tek yon bilet toplam fiyatınız: " + (priceD * 0.7) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
                 } else System.out.println("hatalı girdin agacım");
 
-            } else if (yas < 24 && yas >= 12) {
-                if (rota.equals("B")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+            } else if (age < 24 && age >= 12) {
+                if (route.equals("B")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("12/24 yas  B sehrine çift yon bilet toplam fiyatınız: " + (fiyatB * 0.9 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("12/24 yas  B sehrine tek yon bilet toplam fiyatınız: " + (fiyatB * 0.9) + "$");
+                        System.out.println("12/24 yas  B sehrine çift yon bilet toplam fiyatınız: " + (priceB * 0.9 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("12/24 yas  B sehrine tek yon bilet toplam fiyatınız: " + (priceB * 0.9) + "$");
 
                     } else System.out.println("agam hala yonün belli değil");
 
 
-                } else if (rota.equals("C")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("C")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("12/24 yas  C sehrine çift yon bilet toplam fiyatınız: " + (fiyatC * 0.9 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("12/24 yas  C sehrine tek yon bilet toplam fiyatınız: " + (fiyatC * 0.9) + "$");
+                        System.out.println("12/24 yas  C sehrine çift yon bilet toplam fiyatınız: " + (priceC * 0.9 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("12/24 yas  C sehrine tek yon bilet toplam fiyatınız: " + (priceC * 0.9) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
-                } else if (rota.equals("D")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("D")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("12/24 yas  D sehrine çift yon bilet toplam fiyatınız: " + (fiyatD * 0.9 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("12/24 yas  D sehrine tek yon bilet toplam fiyatınız: " + (fiyatD * 0.9) + "$");
+                        System.out.println("12/24 yas  D sehrine çift yon bilet toplam fiyatınız: " + (priceD * 0.9 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("12/24 yas  D sehrine tek yon bilet toplam fiyatınız: " + (priceD * 0.9) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
                 }
-            }else if (yas < 12) {
-                if (rota.equals("B")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+            }else if (age < 12) {
+                if (route.equals("B")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("12 yas altı B sehrine çift yon bilet toplam fiyatınız: " + (fiyatB * 0.5 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("12 yas altı  B sehrine tek yon bilet toplam fiyatınız: " + (fiyatB * 0.5) + "$");
+                        System.out.println("12 yas altı B sehrine çift yon bilet toplam fiyatınız: " + (priceB * 0.5 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("12 yas altı  B sehrine tek yon bilet toplam fiyatınız: " + (priceB * 0.5) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
 
-                } else if (rota.equals("C")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("C")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("12 yas altı C sehrine çift yon bilet toplam fiyatınız: " + (fiyatC * 0.5 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("12 yas altı C sehrine tek yon bilet toplam fiyatınız: " + (fiyatC * 0.5) + "$");
+                        System.out.println("12 yas altı C sehrine çift yon bilet toplam fiyatınız: " + (priceC * 0.5 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("12 yas altı C sehrine tek yon bilet toplam fiyatınız: " + (priceC * 0.5) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
-                } else if (rota.equals("D")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("D")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("12 yas altı D sehrine çift yon bilet toplam fiyatınız: " + (fiyatD * 0.5 * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("12 yas altı D sehrine tek yon bilet toplam fiyatınız: " + (fiyatD * 0.5) + "$");
+                        System.out.println("12 yas altı D sehrine çift yon bilet toplam fiyatınız: " + (priceD * 0.5 * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("12 yas altı D sehrine tek yon bilet toplam fiyatınız: " + (priceD * 0.5) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
                 }
 
             } else {
-                if (rota.equals("B")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                if (route.equals("B")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("24/65 B sehrine çift yon bilet toplam fiyatınız: " + (fiyatB * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("24/65  B sehrine tek yon bilet toplam fiyatınız: " + (fiyatB) + "$");
+                        System.out.println("24/65 B sehrine çift yon bilet toplam fiyatınız: " + (priceB * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("24/65  B sehrine tek yon bilet toplam fiyatınız: " + (priceB) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
 
-                } else if (rota.equals("C")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("C")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("24/65 C sehrine çift yon bilet toplam fiyatınız: " + (fiyatC * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("24/65 C sehrine tek yon bilet toplam fiyatınız: " + (fiyatC) + "$");
+                        System.out.println("24/65 C sehrine çift yon bilet toplam fiyatınız: " + (priceC * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("24/65 C sehrine tek yon bilet toplam fiyatınız: " + (priceC) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
 
-                } else if (rota.equals("D")) {
-                    if (ucusYonu == 1) {//tek yon ucus kontrol
+                } else if (route.equals("D")) {
+                    if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("24/65 D sehrine çift yon bilet toplam fiyatınız: " + (fiyatD * 0.8 * 2) + "$");
-                    } else if (ucusYonu == 0) {
-                        System.out.println("24/65 altı D sehrine tek yon bilet toplam fiyatınız: " + (fiyatD) + "$");
+                        System.out.println("24/65 D sehrine çift yon bilet toplam fiyatınız: " + (priceD * 0.8 * 2) + "$");
+                    } else if (flightDirection == 0) {
+                        System.out.println("24/65 altı D sehrine tek yon bilet toplam fiyatınız: " + (priceD) + "$");
 
                     } else System.out.println("agam hala yönün belli değil");
                     System.out.println("indirimsiz ucus");
