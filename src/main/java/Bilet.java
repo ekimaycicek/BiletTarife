@@ -127,31 +127,31 @@ public class Bilet {
                 if (route.equals("B")) {
                     if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("24/65 B sehrine çift yon bilet toplam fiyatınız: " + (priceB * 0.8 * 2) + "$");
+                        System.out.println("Your total price of a round trip ticket to the city of 24/65 B: " + (priceB * 0.8 * 2) + "$");
                     } else if (flightDirection == 0) {
-                        System.out.println("24/65  B sehrine tek yon bilet toplam fiyatınız: " + (priceB) + "$");
+                        System.out.println("Your total price of a one-way ticket to the city of 24/65 B: " + (priceB) + "$");
 
-                    } else System.out.println("agam hala yönün belli değil");
+                    } else System.out.println("please indicate your direction");
 
 
                 } else if (route.equals("C")) {
                     if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("24/65 C sehrine çift yon bilet toplam fiyatınız: " + (priceC * 0.8 * 2) + "$");
+                        System.out.println("Your total price of double way ticket to the city of 24/65 C: " + (priceC * 0.8 * 2) + "$");
                     } else if (flightDirection == 0) {
-                        System.out.println("24/65 C sehrine tek yon bilet toplam fiyatınız: " + (priceC) + "$");
+                        System.out.println("Your total price of a one-way ticket to the city of 24/65 C: " + (priceC) + "$");
 
-                    } else System.out.println("agam hala yönün belli değil");
+                    } else System.out.println("please indicate your direction");
 
                 } else if (route.equals("D")) {
                     if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
-                        System.out.println("24/65 D sehrine çift yon bilet toplam fiyatınız: " + (priceD * 0.8 * 2) + "$");
+                        System.out.println("Your total price of double way ticket to the city of 24/65 D: " + (priceD * 0.8 * 2) + "$");
                     } else if (flightDirection == 0) {
-                        System.out.println("24/65 altı D sehrine tek yon bilet toplam fiyatınız: " + (priceD) + "$");
+                        System.out.println("Your total price of one-way ticket to D city below 24/65: " + (priceD) + "$");
 
-                    } else System.out.println("agam hala yönün belli değil");
-                    System.out.println("indirimsiz ucus");
+                    } else System.out.println("please indicate your direction");
+                    System.out.println("free flight");
                 }
 
 
