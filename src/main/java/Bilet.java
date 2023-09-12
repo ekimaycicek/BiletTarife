@@ -84,7 +84,7 @@ public class Bilet {
                     } else System.out.println("please indicate your direction");
 
                 } else if (route.equals("D")) {
-                    if (flightDirection == 1) {//tek yon ucus kontrol
+                    if (flightDirection == 1) {
                         System.out.println(" *** ");
                         System.out.println("Your total price of a two-way ticket to the city of 12/24 years D: " + (priceD * 0.9 * 0.8 * 2) + "$");
                     } else if (flightDirection == 0) {
