@@ -105,7 +105,7 @@ public class Bilet {
 
 
                 } else if (route.equals("C")) {
-                    if (flightDirection == 1) {//tek yon ucus kontrol
+                    if (flightDirection == 1) {//tek yon ucus kontro
                         System.out.println(" *** ");
                         System.out.println("Your total price of double-way ticket to C city for under 12 years old: " + (priceC * 0.5 * 0.8 * 2) + "$");
                     } else if (flightDirection == 0) {
