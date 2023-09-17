@@ -92,6 +92,7 @@ public class Bilet {
                     } else System.out.println("please indicate your direction");
 
                 }
+
             }else if (age < 12) {
                 if (route.equals("B")) {
                     if (flightDirection == 1) {
