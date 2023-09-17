@@ -42,7 +42,6 @@ public class Bilet {
 
                     } else System.out.println("please indicate your direction");
 
-
                 } else if (route.equals("C")) {
                     if (flightDirection == 1) {//tek yon ucus kontrol
                         System.out.println(" *** ");
